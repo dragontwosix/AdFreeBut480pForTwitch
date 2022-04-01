@@ -1,0 +1,29 @@
+{
+  "description": "This extension safely disables ads, however for this to happen, streams can only go to a max of 480p quality.",
+  "manifest_version": 2,
+  "name": "Ad-Free But 480p, for Twitch",
+  "version": "1.2",
+  "icons": {
+    "48": "icons/ttv-48.png",
+    "96": "icons/ttv-96.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/ttv-32.png",
+    "default_title": "Ad-Free But 480p, for Twitch",
+    "default_popup": "popup/index.html"
+  },
+  "permissions": [
+    "https://*.twitch.tv/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.twitch.tv/*"
+      ],
+      "run_at": "document_start",
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
