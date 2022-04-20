@@ -1,4 +1,4 @@
-#AdFreeBut480pForTwitch
+# AdFreeBut480pForTwitch
 
 This extension will make Twitch videos ad-free, however the quality will only go to 480p max.
 
